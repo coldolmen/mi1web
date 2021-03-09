@@ -1,16 +1,4 @@
-.container{
-    background: #ecf0f1;
-    font-family: sans-serif;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr  1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 200px 200px 200px;
-    grid-template-areas: 
-    "icons icons icons icons icons icons"
-    ". . title title . ."
-    "content content content content content content";
-    grid-gap:10px; 
-}
+
 
 
 p {
@@ -60,67 +48,210 @@ p {
 
 .menu{
     width: 90%;
-    max-height: fit-content;
-    
+    max-height: fit-content;    
     margin-bottom: 2%;
+    margin-left: 10%;
 
 }
 
 #menu li{
     display:inline;
-    padding:1% 5% 1% 5%;
-    
-    
-    
+    padding:1% 5% 1% 5%;    
 }
+
+.encuadre{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+ 
+
+}
+
+.news{
+  width:90%;
+  margin-left: 5%;
+  background-color: red;
+  height:100px;
+  margin-bottom: 0%;
+  
+}
+
+.news p{
+  padding:1% 0% 0% 0%;
+  margin:0px 0px 0px 0px;
+  text-align: center;
+  text-indent: 0%;
+  text-rendering: auto;
+}
+
+.carro{
+  width:90%;
+  display: flex;  
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-left: 5%;  
+  list-style-type: no;
+  height: 100%;
+  background-color:#ecf0f1;
+  margin-top: 0%;
+}
+
+.fotos{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  background-color: aqua;
+  
+}
+
+.carro ul{
+  width:90%;
+}
+
+.carro figure{
+  width:20%;
+  height:400px;
+  margin: 7% 1% 2% 1%;  
+}
+
+.carro a{
+  font-size: 2em;
+  margin-left: 32%;
+}
+
+.frame-div{
+  width:90%;
+  max-height: fit-content;
+  margin-bottom: 2%;
+  display:flexbox;
+}
+
+.container{
+  background: #ecf0f1;
+  font-family: sans-serif;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr  1fr 1fr 1fr 1fr;
+  grid-template-rows: 10% 90%;
+  grid-template-areas: 
+  
+  ". . title title title ."
+  ". content content content content content";
+  grid-gap:0%; 
+}
+
 
 .title{
     grid-area:title;
     background-color: #ecf0f1;
+  
+    font-weight: bold;
+    font-size: 3em;
     color: black;
+    padding: 1% 10% 1% 1%;
+    
 }
 
 .content{
     grid-area:content;
-    background-color: #ecf0f1;
+    background-color:#ecf0f1;
     text-align: left;
     color: black;
+    margin-top: 2%;
 }
 
 #pestanas {
   float: top;
   font-size: 3ex;
   font-weight: bold;
+  
 }
 
 #pestanas ul{
-  margin-left: -40px;    
+  
+  margin-left: 300px;   
+  
+   
 }
 
 #pestanas li{
   list-style-type: none;
+  min-width: 10%;
   float: left;
   text-align: center;
-  margin: 0px 2px -2px -0px;
+  margin-right: -3px;
+  margin-bottom: -2px;
   background: darkgrey;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  
   border: 2px solid bisque;
   border-bottom: dimgray;
-  padding: 0px 20px 0px 20px;
+  padding: 10px 10px 10px 10px;
+  height: 50px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 #pestanas a:link{
   text-decoration: none;
   color: bisque;
+  
 }
 
 #contenidopestanas{
   clear: both;  
-  background: dimgray;
-  padding: 20px 0px 20px 20px;
-  border-radius: 5px;
-  border-top-left-radius: 0px;
+  background: rgb(162, 155, 179);
+  color: aliceblue;
+  border-radius: 20px;
   border: 2px solid bisque;
-  width: 1025px;
+  width: 800px;
+  margin-left: 240px;
+  height:390px;
+  display: flex;
+  justify-content:right;
+  align-content: center;
+}
+
+#cpestana1 {
+  width:100%;
+   
+}
+
+.flex-container{
+  display: flex;    
+  list-style: none;
+  justify-content: center; 
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 7%;
+    
+}
+
+#contenidopestanas ul li a{
+  color: #1f617a;
+  font-size: 1em;
+}
+
+.flex-item{
+  padding: 2% 0% 2% 5%;
+  
+  max-height: fit-content;
+  margin: 10px 10px 10px 10px;
+  border-color:white;
+  border-radius: 12px;
+  background-color: rgb(168, 164, 179);
+  width:150px;
+  
+}
+
+.flex-memo{
+  padding: 2% 2% 2% 32%;
+  
+  max-height: fit-content;
+  margin: 10px 10px 10px 10px;
+  border-color:white;
+  border-radius: 12px;
+  background-color: aliceblue;
+  width:90%;
 }
